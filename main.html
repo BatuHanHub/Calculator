@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet"  href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <center><input type="text" name="" id="result" readonly></center>
+    
+    <center>
+    <div class="numbers">
+        <div class="top" id="top">
+            <button type="button" id="theme" onclick="changeTheme()" style="background-color: white; color: white;">.</button>
+            <button type="button" id="operator" onclick="clearDisplay()">AC</button>
+            <button type="button" id="operator" onclick="deleteAChar()"><=</button>
+            <button type="button" id="operator" onclick="appendDisplay('/')">÷</button>
+        </div>
+        
+        <div class="first grid" id="first">
+            <button type="button" id="button" onclick="appendDisplay('7')">7</button>
+            <button type="button" id="button" onclick="appendDisplay('8')">8</button>
+            <button type="button" id="button" onclick="appendDisplay('9')">9</button>
+            <button type="button" id="operator" onclick="appendDisplay('*')">x</button>
+        </div>
+
+        <div class="second grid" id="second">
+            <button type="button" id="button" onclick="appendDisplay('4')">4</button>
+            <button type="button" id="button" onclick="appendDisplay('5')">5</button>
+            <button type="button" id="button" onclick="appendDisplay('6')">6</button>
+            <button type="button" id="operator" onclick="appendDisplay('-')">-</button>
+        </div>
+
+        <div class="thirdy grid" id="third">
+            <button type="button" id="button" onclick="appendDisplay('1')">1</button>
+            <button type="button" id="button" onclick="appendDisplay('2')">2</button>
+            <button type="button" id="button" onclick="appendDisplay('3')">3</button>
+            <button type="button" id="operator" onclick="appendDisplay('+')">+</button>
+        </div>
+        
+        <div>
+            <button type="button" id="button" style="width: 140px;" onclick="appendDisplay('0')">0</button>
+            <button type="button" id="button" onclick="appendDisplay('.')">.</button>
+            <button type="button" id="operator" onclick="appendDisplay('=')">=</button>
+        </div>
+    </div>
+    </center>
+</body>
+</html>

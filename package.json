@@ -1,0 +1,17 @@
+{
+  "name": "calculator",
+  "productName": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Thunderbolt",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.0.1",
+    "electron-builder": "^24.12.0",
+    "electron-packager": "^17.1.2"
+  }
+}
